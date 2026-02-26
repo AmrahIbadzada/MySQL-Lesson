@@ -1,0 +1,23 @@
+use my_dtb;
+CREATE TABLE IF NOT EXISTS Isler(
+	Isler_No INT AUTO_INCREMENT PRIMARY KEY,
+    Is_Adi varchar(250) NOT NULL,
+    Baslama_vaxti DATE,
+    Bitme_vaxti DATE,
+    Veziyyet TINYINT NOT NULL,
+    Onemli TINYINT NOT NULL,
+    Aciqlama TEXT,
+    Qeydiyyat_Zamani TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)ENGINE INNODB;
+
+CREATE TABLE IF NOT EXISTS Yoxlama_Listi(
+	Edilecek_Is INT AUTO_INCREMENT,
+    Is_No INT,
+    Aciqlama VARCHAR(255) NOT NULL,
+    EdildiMi BOOLEAN NOT NULL DEFAULT FALSE,
+    PRIMARY KEY(Edilecek_Is, Is_No),
+    FOREIGN KEY(Is_No)
+    REFERENCES Isler(Isler_No)
+		ON UPDATE RESTRICT
+        ON DELETE CASCADE
+)
