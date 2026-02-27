@@ -64,7 +64,20 @@ The `klasikmodeller` (Classic Models) sample database is used throughout — a f
 The `klasikmodeller` database has the following structure:
 
 ```
-![MySQL Schema](https://github.com/AmrahIbadzada/MySQL-Lesson/blob/a1216b30b1aa486e24c6874e520486e1c29cdf80/MySQL%20relation%20schema.png)
+┌──────────────┐       ┌───────────────┐       ┌─────────────────┐
+│  urunhatlari │       │    urunler    │       │   siparisdetay  │
+│  (Product    │──────▶│  (Products)   │──────▶│  (Order Items)  │
+│   Lines)     │       └───────────────┘       └────────┬────────┘
+└──────────────┘                                        │
+                                                        ▼
+┌──────────────┐       ┌───────────────┐       ┌───────────────┐
+│   personel   │       │   musteriler  │       │   siparisler  │
+│  (Staff)     │──────▶│  (Customers)  │──────▶│   (Orders)    │
+│              │       │               │       └───────────────┘
+│  ofisler     │       │               │       ┌───────────────┐
+│  (Offices)   │◀──────│               │──────▶│   odemeler    │
+└──────────────┘       └───────────────┘       │   (Payments)  │
+                                               └───────────────┘
 ```
 
 | Table | Description |
