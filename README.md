@@ -64,7 +64,7 @@ The `klasikmodeller` (Classic Models) sample database is used throughout — a f
 The `klasikmodeller` database has the following structure:
 
 ```
-<img width="1396" height="1276" alt="Image" src="https://github.com/user-attachments/assets/6ed2a2be-9924-4f10-920d-da4e184c855e" />
+![MySQL Schema](https://github.com/AmrahIbadzada/MySQL-Lesson/blob/a1216b30b1aa486e24c6874e520486e1c29cdf80/MySQL%20relation%20schema.png)
 ```
 
 | Table | Description |
