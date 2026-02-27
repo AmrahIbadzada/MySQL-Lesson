@@ -1,15 +1,14 @@
-# MySQL — Database Course Notes
+# MySQL - Database Course Notes
 
 A structured collection of SQL scripts and notes covering **23 topics**, from database fundamentals to advanced querying techniques. Based on a hands-on YouTube course using the Classic Models sample database.
 
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![SQL](https://img.shields.io/badge/Language-SQL-orange?style=flat-square)]()
 [![Topics](https://img.shields.io/badge/Topics-23-blue?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [About](#about)
 - [Topics Covered](#topics-covered)
@@ -65,20 +64,7 @@ The `klasikmodeller` (Classic Models) sample database is used throughout — a f
 The `klasikmodeller` database has the following structure:
 
 ```
-┌──────────────┐       ┌───────────────┐       ┌─────────────────┐
-│  urunhatlari │       │    urunler    │       │   siparisdetay  │
-│  (Product    │──────▶│  (Products)   │──────▶│  (Order Items)  │
-│   Lines)     │       └───────────────┘       └────────┬────────┘
-└──────────────┘                                        │
-                                                        ▼
-┌──────────────┐       ┌───────────────┐       ┌───────────────┐
-│   personel   │       │   musteriler  │       │   siparisler  │
-│  (Staff)     │──────▶│  (Customers)  │──────▶│   (Orders)    │
-│              │       │               │       └───────────────┘
-│  ofisler     │       │               │       ┌───────────────┐
-│  (Offices)   │◀──────│               │──────▶│   odemeler    │
-└──────────────┘       └───────────────┘       │   (Payments)  │
-                                               └───────────────┘
+<img width="1396" height="1276" alt="Image" src="https://github.com/user-attachments/assets/6ed2a2be-9924-4f10-920d-da4e184c855e" />
 ```
 
 | Table | Description |
