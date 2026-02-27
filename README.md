@@ -16,9 +16,9 @@ A structured collection of SQL scripts and notes covering **23 topics**, from da
 - [Database Schema](#database-schema)
 - [Getting Started](#getting-started)
 - [Code Examples](#code-examples)
+- [Resources](#resources)
 - [Additional Resources](#additional-resources)
 - [Acknowledgments](#acknowledgments)
-- [Resources](#resources)
 
 ---
 
