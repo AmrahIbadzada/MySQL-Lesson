@@ -63,22 +63,7 @@ The `klasikmodeller` (Classic Models) sample database is used throughout — a f
 
 The `klasikmodeller` database has the following structure:
 
-```
-┌──────────────┐       ┌───────────────┐       ┌─────────────────┐
-│  urunhatlari │       │    urunler    │       │   siparisdetay  │
-│  (Product    │──────▶│  (Products)   │──────▶│  (Order Items)  │
-│   Lines)     │       └───────────────┘       └────────┬────────┘
-└──────────────┘                                        │
-                                                        ▼
-┌──────────────┐       ┌───────────────┐       ┌───────────────┐
-│   personel   │       │   musteriler  │       │   siparisler  │
-│  (Staff)     │──────▶│  (Customers)  │──────▶│   (Orders)    │
-│              │       │               │       └───────────────┘
-│  ofisler     │       │               │       ┌───────────────┐
-│  (Offices)   │◀──────│               │──────▶│   odemeler    │
-└──────────────┘       └───────────────┘       │   (Payments)  │
-                                               └───────────────┘
-```
+![MySQL Schema](MySQL%20relation%20schema.png)
 
 | Table | Description |
 |-------|-------------|
